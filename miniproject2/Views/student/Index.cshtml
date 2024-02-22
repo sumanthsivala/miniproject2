@@ -1,0 +1,30 @@
+﻿@model List<miniproject2.Models.Domain.student>
+@{
+}
+
+<h1>Students</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th> Id </th>
+			<th> Name</th>
+			<th> Email </th>
+			<th> Course Name </th>
+			<th> Percentage </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var studen in Model)
+		{
+			<tr>
+				<td>@studen.Id</td>
+				<td>@studen.Name</td>
+				<td>@studen.Email</td>
+				<td>@studen.course</td>
+				<td>@studen.percentage</td>
+			</tr>
+		}
+	</tbody>
+
+</table>
+
